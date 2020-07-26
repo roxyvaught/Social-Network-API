@@ -1,5 +1,4 @@
 const { User, Thought } = require('../models');
-// create the thought routes
 const thoughtController ={
 
   getAllThoughts(req, res) {
@@ -21,12 +20,12 @@ const thoughtController ={
       });
   },
   createThought({body }, res) {
-    console.log(" i am at create thought")
+    console.log("Creating a thought")
     console.log(body.userId)
     Thought.create(body)
 
     .then(({ _id }) =>{
-        console.log(" i am at create thought 2")
+        console.log("I created a thought")
         console.log(body.userId)
     User.findOneAndUpdate(
         {_id: body.userId},
@@ -34,7 +33,7 @@ const thoughtController ={
         {new: true}
     )
     .then(dbThoughtData => {
-        console.log("i am at create thoughts response")
+        console.log("Response to thought creation!")
         console.log(dbThoughtData)
         res.json(dbThoughtData)})
         .catch(err => res.status(400).json(err));

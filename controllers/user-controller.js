@@ -1,5 +1,4 @@
 const { User } = require('../models');
-// create the user routes
 const userController ={
 
   getAllUser(req, res) {
@@ -55,7 +54,7 @@ const userController ={
       .catch(err => res.status(400).json(err));
   },
   addFriend({ params }, res) {
-    console.log("I'm at add friend")
+    console.log("Adding a friend")
     console.log(params);
     User.findOneAndUpdate(
       {_id: params.userId},

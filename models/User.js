@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-// import the npm package for verifying that email is a valid email
 var mongoose = require('mongoose');
 require('mongoose-type-email');
 
@@ -37,13 +36,11 @@ const UserSchema = new Schema({
     id: false
   }
   );
-    // get total count of friends on retrieval
+
     UserSchema.virtual('friendCount').get(function() {
         return this.friends.length;
       });
 
-  // create the User model using the UserSchema
 const User = model('User', UserSchema);
 
-// export the User model
 module.exports = User;
