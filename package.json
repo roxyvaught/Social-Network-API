@@ -1,0 +1,28 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "## Badges",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.22",
+    "mongoose-type-email": "^1.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roxyvaught/Social-Network-API.git"
+  },
+  "author": "roxyvaught",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roxyvaught/Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/roxyvaught/Social-Network-API#readme",
+  "keywords": []
+}
