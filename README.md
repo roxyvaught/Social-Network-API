@@ -20,7 +20,6 @@ Created using:
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [License](#license)
 * [Contributing](#contributing)
 * [Questions](#questions)
 
@@ -31,10 +30,6 @@ Created using:
 ## Usage 
 
 In order to test the functionality of the API, please run `npm start` and test using Insomnia 
-
-## License
-
-MIT License
 
 ## Contributing
 
